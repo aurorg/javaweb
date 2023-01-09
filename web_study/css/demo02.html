@@ -9,13 +9,50 @@
             height:400px;
             background-color: aquamarine;
             /* border  */
-            border-width:2px;  /*边框的粗细 */
-            border-style:solid;  /* 边框的样式： solid(实线），dotted（点状线）*/
+            border-width:2px;   /*边框的粗细 */
+            border-style:solid;    /* 边框的样式： solid(实线），dotted（点状线）*/
             border-color:blue;
+
+           /* border:4px double deeppink;  */
+           /* border-top:4px dotted pink; */
+
+
+        }
+        #div2{
+            width:200px;
+            height:200px;
+            background-color: darksalmon;
+
+
+            margin-top:100px;
+            margin-left:100px;
+
+            /*margin:100px 100px 50px 150px; */    /*一个值：上下左右。两个值：上下，左右。 三个值：上  左右 下；四个值：上右下左 */
+
+            padding-top:50px;
+            padding-left:50px;
+        }
+
+        #div3{
+            width:100px;
+            height:100px;
+            background-color: mediumpurple;
+
+            /*
+            margin-top:50px;
+            margin-left:50px;
+             */
+
         }
     </style>
 </head>
 <body>
-    <div id="div1">&nbsp;</div>
+    <div id="div1">
+        <div  id="div2">
+            <div id="div3"> &nbsp;</div>
+        </div>
+
+    </div>
+
 </body>
 </html>
