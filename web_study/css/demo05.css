@@ -14,6 +14,7 @@ body{
     border:0px solid blue;
     margin-left: 10%;
     float: left;
+    border-radius: 8px;
 }
 #tbl_fruit{
     width:60%;
