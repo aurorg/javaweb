@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: lavenderblush;
+}
+
+#div{
+    position:relative;
+    float: left;
+}
+#div_container{
+    width:80%;
+    height:100%;
+    border:0px solid blue;
+    margin-left: 10%;
+    float: left;
+}
+#tbl_fruit{
+    width:60%;
+    line-height: 28px;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+#tbl_fruit,#tbl_fruit tr,#tbl_fruit th, #tbl_fruit td{
+    border:1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "宋体", fangsong;
+    font-weight: lighter;
+    color: coral;
+}
+.w20{
+    width:20%;
+}
+.delImg{
+    width:24px;
+    height:24px;
+}
