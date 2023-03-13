@@ -1,3 +1,30 @@
+
+window.onload=function(){
+    //当页面加载完成时，需要绑定各种事件
+
+    //根据表格获取到表格
+    var fruitTbl = document.getElementById("tbl_fruit");
+
+    //获取表格中的所有的行
+    var rows=fruitTbl.rows;
+    for(var i=0;i<rows.length;i++){
+        var tr=rows[i];
+
+        //1.绑定鼠标悬浮设置背景颜色事件
+        tr.onmouseover=showBGColor;
+        tr.onmouseout=clearBGColor; //离开
+
+        var cells =tr.cells;
+        var priceTD =cells[1];
+
+        //2.绑定鼠标悬浮在单价单元格变手势的事件
+        priceTD.onmouseover=showHand;
+    }
+
+
+}
+
+
 //当鼠标悬浮式，显示背景颜色
 function showBGColor(){
     //event:当前发生的事件
