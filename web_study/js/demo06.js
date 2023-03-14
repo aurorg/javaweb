@@ -19,10 +19,15 @@ window.onload=function(){
 
         //2.绑定鼠标悬浮在单价单元格变手势的事件
         priceTD.onmouseover=showHand;
+
+        //3.绑定鼠标点击单价单元格的事件
+       // priceTD.onclick=editPrice;
     }
 
 
 }
+
+
 
 
 //当鼠标悬浮式，显示背景颜色
@@ -71,6 +76,7 @@ function showHand(){
         var td=event.srcElement;
 
         //cursor:光标
-        td.style.cursor="hand";
+        td.style.cursor="pointer";
     }
 }
+

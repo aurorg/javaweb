@@ -44,6 +44,6 @@ function showHand(){
         var td=event.srcElement;
 
         //cursor:光标
-        td.style.cursor="hand";
+        td.style.cursor="pointer";
     }
 }
