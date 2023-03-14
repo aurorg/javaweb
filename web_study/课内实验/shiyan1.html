@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>学生信息管理系统</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+    }
+
+    header {
+      background-color: darkseagreen;
+      color: #FFFFFF;
+      padding: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    nav {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      margin-right: 20px;
+    }
+
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    article {
+      border: 1px solid #CCCCCC;
+      padding: 10px;
+      background-color: #FFFFFF;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid #CCCCCC;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: darkseagreen;
+      color: #FFFFFF;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #F5F5F5;
+    }
+
+    tbody tr:hover {
+      background-color: #DDDDDD;
+    }
+
+    footer {
+      background-color: darkseagreen;
+      color: #FFFFFF;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>学生信息管理系统</h1>
+  <nav>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">学生信息</a></li>
+      <li><a href="#">教师信息</a></li>
+      <li><a href="#">课程信息</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h2>学生信息</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>001</td>
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+        <td><a href="#">编辑</a> | <a href="#">删除</a></td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>李四</td>
+        <td>女</td>
+        <td>19</td>
+        <td><a href="#">编辑</a> | <a href="#">删除</a></td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>王五</td>
+        <td>男</td>
+        <td>21</td>
+        <td><a href="#">编辑</a> | <a href="#">删除</a></td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>赵六</td>
+        <td>女</td>
+        <td>20</td>
+        <td><a href="#">编辑</a> | <a href="#">删除</a></td>
+    </table>
+  </article>
+</main>
+
+<footer>
+  <p>版权所有 &copy; 学生信息管理系统</p>
+</footer>
+</body>
+
+</html>
