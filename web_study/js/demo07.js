@@ -24,9 +24,31 @@ window.onload=function(){
         //3.绑定鼠标点击单价单元格的事件
         priceTD.onclick=editPrice;
 
+        //7.绑定删除小图标的点击事件
+        var img=cells[4].firstChild;
+        if(img && img.tagName=="IMG"){
+            //绑定单击事件
+            img.onclick=delFruit;
+        }
+
     }
 
+}
 
+function delFruit(){
+    if( event  && event.srcElement && event.srcElement.tagName=="IMG"){
+        //alter表示弹出一个对话框，只有确定按钮
+        //confirm表示弹出一个对话框，有确定和取消按钮。当点击确定，返回true，否则返回false
+
+        if(window.confirm("是否确认删除当前库存记录")){
+            var img=event.srcElement;
+            var tr=img.parentElement.parentElement;
+            var fruitTbl =document.getElementById("tbl_fruit");
+            fruitTbl.deleteRow(tr.rowIndex);
+
+            updateZJ();
+        }
+    }
 }
 
 //当鼠标点击单价单元格时进行价格编辑
@@ -47,10 +69,16 @@ function editPrice(){
             var input = priceTD.firstChild;
             if (input.tagName == "INPUT") {
                 input.value = oldPrice;
+
+                //选中输入框内部的文本
                 input.select();
 
                 //4.绑定输入框失去焦点事件，失去焦点，更新单价
                 input.onblur=updatePrice;
+
+                //8.在输入框上绑定键盘输入的事件，此处需要保证用户输入的是数字
+                input.onkeydown=ckInput;
+
             }
 
         }
@@ -58,7 +86,23 @@ function editPrice(){
     }
 }
 
-//
+//检验键盘输入的值的方法
+function ckInput(){
+    var kc=event.keyCode;
+    //0-9：48-57
+    //backspace:8
+    //enter:13
+    //console.log(kc);
+      if( !((kc>=48 && kc<=57)  || kc==8 || kc==13 ) ){
+          event.returnValue=false;
+      }
+
+      if(kc==13){
+          event.srcElement.blur();
+      }
+}
+
+//更新单价的方法
 function updatePrice(){
     if(event && event.srcElement && event.srcElement.tagName=="INPUT"){
         var input=event.srcElement;
@@ -68,7 +112,7 @@ function updatePrice(){
         var priceTD =input.parentElement;
         priceTD.innerText=newPrice;
 
-        //更新当前这一行的小计这一个格子的值
+        //5.更新当前这一行的小计这一个格子的值
         //priceTD.parentElement td的父元素是tr
         updateXJ(priceTD.parentElement);
     }
@@ -85,7 +129,7 @@ function updateXJ(tr){
         var xj=parseInt(price) * parseInt(count);
         tds[3].innerText=xj;
 
-        //更新总计
+        //6.更新总计
         updateZJ();
     }
 }
