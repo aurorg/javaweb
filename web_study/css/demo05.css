@@ -37,3 +37,9 @@ body{
     width:24px;
     height:24px;
 }
+
+.btn{
+    border:1px solid lightgray;
+    width:80px;
+    height:24px;
+}
