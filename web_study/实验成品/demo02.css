@@ -26,10 +26,11 @@ li {
     margin-right: 20px;
 }
 a {
-    color: #FFFFFF;
+     color: #FFDDBE;
     text-decoration: none;
 }
 a:hover {
+    color: #AAFF88;
     text-decoration: underline;
 }
 main {
@@ -60,6 +61,7 @@ tbody tr:hover {
     background-color: #DDDDDD;
 }
 footer {
+
     background-color: darkseagreen;
     color: #FFFFFF;
     padding: 10px;
