@@ -21,10 +21,35 @@ window.onload=function(){
         priceTD.onmouseover=showHand;
 
         //3.绑定鼠标点击单价单元格的事件
-       // priceTD.onclick=editPrice;
+        priceTD.onclick=editPrice;
+
     }
 
 
+}
+
+//当鼠标点击单价单元格时进行价格编辑
+function editPrice(){
+    if(event && event.srcElement && event.srcElement.tagName=="TD"){
+        var priceTD=event.srcElement;
+        if(priceTD.firstChild && priceTD.firstChild.nodeType==3) {
+            //innerText表示设置或者获取当前节点的内部文本
+            var oldPrice = priceTD.innerHTML;
+
+
+            //innerHTML 表示设置当前节点的内部HTML
+            priceTD.innerHTML = "<input type='text' size='4'/>";
+
+            //<td><input type='text' size='4' />;
+            var input = priceTD.firstChild;
+            if (input.tagName == "INPUT") {
+                input.value = oldPrice;
+                input.select();
+            }
+
+        }
+
+    }
 }
 
 
