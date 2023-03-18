@@ -14,8 +14,7 @@ window.onload=function(){
     var rows=fruitTbl.rows;
     for(var i=1;i<rows.length-1;i++){
         var tr=rows[i];
-
-
+        trBindEvent(tr);
 
     }
 
@@ -71,6 +70,7 @@ function addFruit(){
     imgTD.innerHTML="<img src=\"/pictures/1.jpg\" class=\"delImg\">";
 
     updateZJ();
+    trBindEvent(tr);
 }
 
 function delFruit(){
