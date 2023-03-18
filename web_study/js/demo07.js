@@ -1,38 +1,76 @@
+function getid(id){
+    return document.getElementById(id);
+}
+
 window.onload=function(){
 
     updateZJ();
     //当页面加载完成时，需要绑定各种事件
 
     //根据表格获取到表格
-    var fruitTbl = document.getElementById("tbl_fruit");
+    var fruitTbl = getid("tbl_fruit");
 
     //获取表格中的所有的行
     var rows=fruitTbl.rows;
     for(var i=1;i<rows.length-1;i++){
         var tr=rows[i];
 
-        //1.绑定鼠标悬浮设置背景颜色事件
-        tr.onmouseover=showBGColor;
-        tr.onmouseout=clearBGColor; //离开
 
-        var cells =tr.cells;
-        var priceTD =cells[1];
-
-        //2.绑定鼠标悬浮在单价单元格变手势的事件
-        priceTD.onmouseover=showHand;
-
-        //3.绑定鼠标点击单价单元格的事件
-        priceTD.onclick=editPrice;
-
-        //7.绑定删除小图标的点击事件
-        var img=cells[4].firstChild;
-        if(img && img.tagName=="IMG"){
-            //绑定单击事件
-            img.onclick=delFruit;
-        }
 
     }
 
+    getid("addBtn").onclick=addFruit;
+}
+
+function trBindEvent(tr){
+    //1.绑定鼠标悬浮设置背景颜色事件
+    tr.onmouseover=showBGColor;
+    tr.onmouseout=clearBGColor; //离开
+
+    var cells =tr.cells;
+    var priceTD =cells[1];
+
+    //2.绑定鼠标悬浮在单价单元格变手势的事件
+    priceTD.onmouseover=showHand;
+
+    //3.绑定鼠标点击单价单元格的事件
+    priceTD.onclick=editPrice;
+
+    //7.绑定删除小图标的点击事件
+    var img=cells[4].firstChild;
+    if(img && img.tagName=="IMG"){
+        //绑定单击事件
+        img.onclick=delFruit;
+    }
+
+}
+
+//添加水果信息
+function addFruit(){
+    var fname=getid("fname").value;
+    var price=parseInt(getid("price").value);
+    var fcount=parseInt(getid("fcount").value);
+    var xj=price*fcount;
+
+    var fruitTbl=getid("tbl_fruit");
+    var tr =fruitTbl.insertRow(fruitTbl.rows.length-1);
+
+    var fnameTD=tr.insertCell();
+    fnameTD.innerText=fname;
+
+    var priceTD=tr.insertCell();
+    priceTD.innerText=price;
+
+    var fcountTD=tr.insertCell();
+    fcountTD.innerText=fcount;
+
+    var xjTD=tr.insertCell();
+    xjTD.innerText=xj;
+
+    var imgTD=tr.insertCell();
+    imgTD.innerHTML="<img src=\"/pictures/1.jpg\" class=\"delImg\">";
+
+    updateZJ();
 }
 
 function delFruit(){
