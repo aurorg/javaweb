@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="bootstrap5" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="&lt;自定义&gt;" />
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/bootstrap5" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/bootstrap5" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
