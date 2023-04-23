@@ -3,7 +3,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 header {
     background: linear-gradient(to bottom,  #FFFFFF, darkseagreen);
     color: #fff;
@@ -13,7 +12,6 @@ header {
     padding: 10px;
 
 }
-
 h1 {
     margin: 0;
     font-size: 48px;
@@ -21,18 +19,15 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px #000;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-
 nav ul li {
     margin-left: 10px;
 }
-
 nav ul li:first-child {
     margin-left: 0;
 }
@@ -73,20 +68,6 @@ th {
     background-color:  darkseagreen;
     color: #fff;
 }
-
-/*button {*/
-/*    background-color:  darkseagreen;*/
-/*    color: #fff;*/
-/*    border: none;*/
-/*    padding: 5px 10px;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*    transition: background-color 0.3s;*/
-/*}*/
-
-/*button:hover {*/
-/*    background-color:  darkseagreen;*/
-/*}*/
 
 button {
     background-color: darkseagreen;

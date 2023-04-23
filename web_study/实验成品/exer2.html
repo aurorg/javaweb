@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>学生成绩考评</title>
+</head>
+<body>
+<label for="score">请输入学生的分数：</label>
+<input type="number" id="score" name="score">
+<button onclick="evaluate()">评估</button>
+<p id="result"></p>
+
+<script>
+  function evaluate() {
+    let score = document.getElementById("score").value; // 获取用户输入的成绩
+    let evaluation; // 定义一个变量保存考评结果
+
+    if (score >= 90) {
+      evaluation = "优秀";
+    } else if (score >= 80 && score < 90) {
+      evaluation = "良好";
+    } else if (score >= 70 && score < 80) {
+      evaluation = "中等";
+    } else if (score >= 60 && score < 70) {
+      evaluation = "及格";
+    } else {
+      evaluation = "不及格";
+    }
+
+    document.getElementById("result").innerHTML = "学生的考评成绩为：" + evaluation; // 修改 HTML 元素的内容
+  }
+</script>
+</body>
+</html>

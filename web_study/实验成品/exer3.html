@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>乘法表</title>
+</head>
+<body>
+<table>
+  <caption>乘法表</caption>
+  <tbody id="table-body"></tbody>
+</table>
+
+<script>
+  const rows = 9; // 表格行数
+  const cols = 9; // 表格列数
+
+  const tableBody = document.getElementById("table-body"); // 获取表格主体元素
+
+  // 创建表格行和单元格，并将它们添加到表格主体元素中
+  for (let j = 1; j <= cols; j++) {
+    const row = document.createElement("tr"); // 创建表格行元素
+    for (let i = 1; i <= j; i++) {
+      const cell = document.createElement("td"); // 创建表格单元格元素
+      cell.textContent = i + " × " + j + " = " + (i * j); // 设置单元格内容
+      row.appendChild(cell); // 添加单元格到表格行中
+    }
+    tableBody.appendChild(row); // 添加行到表格主体中
+  }
+</script>
+</body>
+</html>
