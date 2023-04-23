@@ -1,96 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-position: center;
 }
+
 header {
-    background-color: darkseagreen;
-    color: #FFFFFF;
+    background: linear-gradient(to bottom,  #FFFFFF, darkseagreen);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
+
 }
+
 h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #000;
 }
-nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-ul {
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
 }
-li {
-    margin-right: 20px;
+
+nav ul li {
+    margin-left: 10px;
 }
-a {
-     color: yellow;
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
-a:hover {
-    color: #AAFF88;
-    text-decoration: underline;
+
+nav ul li a:hover {
+    background-color: #fff;
+    color:  darkseagreen;
 }
+
+/* Styles for the main content */
 main {
     margin: 20px;
 }
-article {
-    border: 1px solid #CCCCCC;
-    padding: 10px;
-    background-color: #FFFFFF;
+
+h2 {
+    margin-top: 0;
 }
+
 table {
     border-collapse: collapse;
     width: 100%;
 }
-th, td {
-    border: 1px solid #CCCCCC;
-    padding: 8px;
-    text-align: center;
-}
-th {
-    background-color: darkseagreen;
-    color: #FFFFFF;
-}
-tbody tr:nth-child(even) {
-    background-color: #F5F5F5;
-}
-tbody tr:hover {
-    background-color: #DDDDDD;
-}
-footer {
 
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color:  darkseagreen;
+    color: #fff;
+}
+
+/*button {*/
+/*    background-color:  darkseagreen;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    padding: 5px 10px;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color:  darkseagreen;*/
+/*}*/
+
+button {
     background-color: darkseagreen;
-    color: #FFFFFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+}
+
+/* Styles for the footer */
+footer {
     padding: 10px;
     text-align: center;
 }
-#div_container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.abc{
-    position: absolute;
-    top: 40%;
-    left:50%
-}
-.f31{
-    font-size:50px;
-    font-family: "宋体", fangsong;
-    color: darkseagreen;
-}
-.f32{
-    font-size:30px;
-    font-family: "宋体", fangsong;
-}
-
-

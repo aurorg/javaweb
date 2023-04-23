@@ -5,8 +5,11 @@
   <title>学生信息管理系统</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="demo02.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css">
-  <meta name="szlaurora" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="caozuo.js"></script>
 </head>
 
 <body>
@@ -25,8 +28,7 @@
 <main>
   <article>
     <h2>学生信息</h2>
-    <button type="button" ><a href="demo04tianjia.html">添加</a></button>
-    <table>
+    <table id="tbl_student">
       <thead>
       <tr>
         <th>学号</th>
@@ -38,34 +40,30 @@
       </thead>
       <tbody>
       <tr>
-        <td>123456</td>
-        <td>丫丫</td>
-        <td>男</td>
-        <td>18</td>
-        <td><a href="demo03bianji.html">编辑</a> *~* <a href="#">删除</a></td>
-      </tr>
-      <tr>
-        <td>000002</td>
-        <td>啦啦</td>
+        <td>9</td>
+        <td>金豆豆</td>
         <td>女</td>
         <td>18</td>
-        <td><a href="demo03bianji.html">编辑</a> *~* <a href="#">删除</a></td>
+        <td><button type="button" onclick="editStudent(this)">编辑</button> *~* <button type="button" onclick="deleteStudent(this)">删除</button></td>
       </tr>
       <tr>
-        <td>000003</td>
-        <td>啵啵</td>
-        <td>男</td>
-        <td>15</td>
-        <td><a href="demo03bianji.html">编辑</a> *~* <a href="#">删除</a></td>
-      </tr>
-      <tr>
-        <td>000004</td>
-        <td>哈哈</td>
+        <td>11</td>
+        <td>史站丽</td>
         <td>女</td>
         <td>18</td>
-        <td><a href="demo03bianji.html">编辑</a> *~* <a href="#">删除</a></td>
-
+        <td><button type="button" onclick="editStudent(this)">编辑</button> *~* <button type="button" onclick="deleteStudent(this)">删除</button></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>曹文清</td>
+        <td>女</td>
+        <td>19</td>
+        <td><button type="button" onclick="editStudent(this)">编辑</button> *~* <button type="button" onclick="deleteStudent(this)">删除</button></td>
+      </tr>
+      </tbody>
     </table>
+
+    <button type="button" onclick="addStudent()">添加学生</button>
   </article>
 </main>
 

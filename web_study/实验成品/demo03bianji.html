@@ -4,35 +4,51 @@
   <title>编辑学生信息</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="demo03.css">
-
   <meta name="szlaurora" content="width=device-width, initial-scale=1.0">
+
+  <script src="caozuo.js"></script>
 </head>
 <body>
 <header>
   <h1>编辑学生信息</h1>
 </header>
 <main>
-  <form>
-    <label for="student-id">学号：</label>
-    <input type="text" id="student-id" name="student-id"><br>
+  <form id="edit-form">
+    <table>
+      <tr>
+        <td><label for="student-id">学号：</label></td>
+        <td><input type="text" id="student-id" name="student-id"></td>
+      </tr>
 
-    <label for="student-name">姓名：</label>
-    <input type="text" id="student-name" name="student-name"><br>
+      <tr>
+        <td><label for="student-name">姓名：</label></td>
+        <td><input type="text" id="student-name" name="student-name"></td>
+      </tr>
 
-    <div class="gender">
-      <label for="male" class="male-label">男</label>
-      <input type="radio" id="male" name="gender" value="male"><br>
+      <tr>
+        <td><label>性别：</label></td>
+        <td>
+          <div id="gender">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" class="male-label">男</label><br>
 
-      <label for="female" class="female-label">女</label>
-      <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="female-label">女</label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="student-age">年龄：</label></td>
+        <td><input type="text" id="student-age" name="student-age"></td>
+      </tr>
+    </table>
+
+    <div class="submit">
+      <input type="submit" value="提交">
+      <!-- Indicates a successful or positive action -->
+      <!-- <button type="button" class="btn btn-success">提交</button> -->
     </div>
-
-    <label for="student-age">年龄：</label>
-    <input type="text" id="student-age" name="student-age"><br>
-
-    <input type="submit" value="提交">
-    <!-- Indicates a successful or positive action -->
-<!--    <button type="button" class="btn btn-success">提交</button>-->
   </form>
 </main>
 </body>
