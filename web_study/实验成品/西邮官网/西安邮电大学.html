@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform">
+<link rel="alternate" media="handheld" href="http://www.xiyou.edu.cn/#">
+<title>西安邮电大学</title><meta name="keywords" content="西安邮电大学">
+
+<link href="./西安邮电大学_files/index.css" rel="stylesheet" type="text/css">
+<link href="./西安邮电大学_files/banner_css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./西安邮电大学_files/index.vsb.css">
+</head>
+	
+<body><!--topBox start-->
+<div class="topBox">
+<div class="top">
+<a class="top_left fl" href="http://www.xiyou.edu.cn/index.htm"><img width="398" height="94" src="./西安邮电大学_files/xy_logo.png"></a>
+<div class="top_right fr">
+<div class="top_right_fr fr">
+<div class="top_up fr">
+<script language="javascript">
+function dosuba44386a()
+{
+    try{
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1)
+        {
+            window.external.AddToFavoritesBar(document.location.href,document.title,"");//IE8
+        }else if(ua.toLowerCase().indexOf("rv:")>-1)
+        {
+            window.external.AddToFavoritesBar(document.location.href,document.title,"");//IE11+
+        }else{
+            if (document.all) 
+            {
+                window.external.addFavorite(document.location.href, document.title);
+            }else if(window.sidebar)
+            {
+                window.sidebar.addPanel( document.title, document.location.href, "");//firefox
+            }
+            else
+            {
+                alert(hotKeysa44386a());
+            }
+        }
+
+    }
+    catch (e){alert("无法自动添加到收藏夹，请使用 Ctrl + d 手动添加");}
+}
+
+/*
+dosuba44386a()函数用于将当前网页添加到浏览器收藏夹中。
+首先，它检测用户使用的浏览器类型，如果是IE8或IE11+，则使用window.external.AddToFavoritesBar()方法将网页添加到收藏夹。
+如果不是IE浏览器，则尝试使用window.external.addFavorite()或window.sidebar.addPanel()方法将网页添加到收藏夹。
+如果以上方法都不支持，则提示用户按热键将网页添加到收藏夹。
+ */
+
+function hotKeysa44386a() 
+{
+    var ua = navigator.userAgent.toLowerCase(); 
+    var str = "";    
+    var isWebkit = (ua.indexOf('webkit') != - 1); 
+    var isMac = (ua.indexOf('mac') != - 1);     
+    if (ua.indexOf('konqueror') != - 1) 
+    {  
+        str = 'CTRL + B'; // Konqueror   
+    } 
+    else if (window.home || isWebkit || isMac) 
+    {        
+        str = (isMac ? 'Command/Cmd' : 'CTRL') + ' + D'; // Netscape, Safari, iCab, IE5/Mac   
+    }
+    return ((str) ? '无法自动添加到收藏夹，请使用' + str + '手动添加' : str);
+}
+/*
+hotKeysa44386a()函数用于返回提示用户按热键将网页添加到收藏夹的消息。
+该函数会检测用户使用的浏览器类型，如果是一些常见的浏览器（如Netscape、Safari、iCab或IE5/Mac），则返回相应的热键信息。
+ */
+
+function setHomepagea44386a()
+{
+    var url = document.location.href;
+    if (document.all)
+    {
+        document.body.style.behavior='url(#default#homepage)';
+        document.body.setHomePage(url);
+    }
+    else if (window.sidebar)
+    {
+        if(window.netscape)
+        {
+             try{
+                  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+             }catch (e){
+                   alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true");
+             }
+        }
+    var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+    prefs.setCharPref('browser.startup.homepage',url);
+    }
+    else
+    {
+        alert("浏览器不支持自动设为首页，请手动设置");
+    }
+}
+
+/*
+setHomepagea44386a()函数用于将当前网页设为浏览器的首页。
+它首先检测用户使用的浏览器类型，如果是IE浏览器，则使用document.body.style.behavior和document.body.setHomePage()方法将当前网页设为浏览器的首页。
+如果是Firefox浏览器，则使用Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch)和prefs.setCharPref('browser.startup.homepage',url)方法将当前网页设为浏览器的首页。
+如果以上方法都不支持，则提示用户手动设置首页。
+ */
+
+</script>
+<table width="420">
+    <tbody><tr>
+        <td style="font-size: 9pt">
+          <a class="color1" herf="#" href="javascript:setHomepagea44386a()">设为首页</a><a class="color2" onclick="javascript:dosuba44386a();" href="http://www.xiyou.edu.cn/#">加入收藏</a><a class="color3" href="http://www.xiyou.edu.cn/wzdt.htm">网站地图</a> <a class="color5" href="http://english.xupt.edu.cn/" target="_bank">ENGLISH</a> <a class="color4" href="http://i.xupt.edu.cn/" target="_bank">一网通办</a>   
+        </td>
+    </tr>
+</tbody></table></div>
+<div class="searchBox fr"><script type="text/javascript">
+    function _nl_ys_check(){
+        
+        var keyword = document.getElementById('showkeycode44384').value;
+        if(keyword==null||keyword==""){
+            alert("请输入你要检索的内容！");
+            return false;
+        }
+        if(window.toFF==1)
+        {
+            document.getElementById("lucenenewssearchkey44384").value = Simplized(keyword );
+        }else
+        {
+            document.getElementById("lucenenewssearchkey44384").value = keyword;            
+        }
+        var  base64 = new Base64();
+        document.getElementById("lucenenewssearchkey44384").value = base64.encode(document.getElementById("lucenenewssearchkey44384").value);
+        new VsbFormFunc().disableAutoEnable(document.getElementById("showkeycode44384"));
+        return true;
+    } 
+</script>
+<form action="http://www.xiyou.edu.cn/newWeb/new_search.jsp?wbtreeid=1288" method="post" id="au2a" name="au2a" onsubmit="return _nl_ys_check()" style="display: inline">
+ <input type="hidden" id="lucenenewssearchkey44384" name="lucenenewssearchkey" value=""><input type="hidden" id="_lucenesearchtype44384" name="_lucenesearchtype" value="1"><input type="hidden" id="searchScope44384" name="searchScope" value="1">
+ <div style="margin:0px;margin-top:3px;display:inline;font-size:12px;">
+ <input name="showkeycode" id="showkeycode44384" style="padding-left:0px;height:30px;line-height:30px;border:none;margin-left:18px;width:155px;margin-top:3px;">
+ <input type="image" src="./西安邮电大学_files/xy_search_btn_12.png" align="absmiddle" style="cursor: hand;margin-top:1px;">
+ </div>
+</form><script language="javascript" src="./西安邮电大学_files/base64.js"></script><script language="javascript" src="./西安邮电大学_files/formfunc.js"></script>
+</div></div>
+<div class="clear_both"></div></div>
+<div class="clear_both"></div></div></div><!--topBox end--><!--navBox start-->
+<div class="navBox">
+<div class="nav">
+<ul><script>
+    var newimg1 = new Image();
+    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
+    var newimg2 = new Image();
+    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
+    var newimg3 = new Image();
+    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
+</script>
+<!--[if IE 6]> <style>#c44377{behavior: url("/system/resource/js/hover.htc");}</style><![endif]--> 
+<div id="c44377"> 
+<ul>
+<li><a id="current" href="http://www.xiyou.edu.cn/index.htm">首页</a>
+</li>
+<li><a href="http://www.xiyou.edu.cn/xxgk/about1.htm">学校概况</a>
+
+<ul>
+  <li><a href="http://www.xiyou.edu.cn/xxgk/about1.htm">学校简介</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xxgk/xrld11.htm">现任领导</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xxgk/lrld1.htm">历任领导</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xxgk/lsyg1.htm">历史沿革</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xxgk/xxbs1.htm">学校标识</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/jgsz/dzznbm.htm">机构设置</a>
+
+<ul>
+  <li><a href="http://www.xiyou.edu.cn/jgsz/dzznbm.htm">党政职能部门</a></li>
+  <li><a href="http://www.xiyou.edu.cn/jgsz/yxsz1.htm">院系设置</a></li>
+  <li><a href="http://www.xiyou.edu.cn/jgsz/zsdw.htm">直属单位</a></li>
+  <li><a href="http://www.xiyou.edu.cn/jgsz/kyjg1.htm">科研机构</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/rcpy/jxzs1.htm">人才培养</a>
+
+<ul>
+  <li><a href="http://www.xiyou.edu.cn/rcpy/jxzs1.htm">教学综述</a></li>
+  <li><a href="http://www.xiyou.edu.cn/rcpy/yjsjy1.htm">研究生教育</a></li>
+  <li><a href="http://www.xiyou.edu.cn/rcpy/bksjy1.htm">本科生教育</a></li>
+  <li><a href="http://www.xiyou.edu.cn/rcpy/jxjy1.htm">继续教育</a></li>
+  <li><a href="http://fao.xupt.edu.cn/">国际教育</a></li>
+  <li><a href="http://www.xiyou.edu.cn/rcpy/jxcg1.htm">教学成果</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/szdw2/szdw1.htm">师资队伍</a>
+</li>
+<li><a href="http://www.xiyou.edu.cn/xkjs/sszy2.htm">学科建设</a>
+
+<ul>
+  <li><a href="http://www.xiyou.edu.cn/xkjs/sszy2.htm">硕士专业</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xkjs/zdxk1.htm">重点学科</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/xkyj/zdxk1.htm">科学研究</a>
+
+<ul>
+  <li><a href="http://www.xiyou.edu.cn/xkyj/zdxk1.htm">科技概况</a></li>
+  <li><a href="http://xayd.cbpt.cnki.net/">学术期刊</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/zsjy/bysjy1.htm" target="_blank">招生就业</a>
+
+<ul>
+  <li><a href="http://zhaosheng.xupt.edu.cn/" target="_blank">本科生招生</a></li>
+  <li><a href="http://gr.xupt.edu.cn/" target="_blank">研究生招生</a></li>
+  <li><a href="http://jzxy.xupt.edu.cn/" target="_blank">继职教育招生</a></li>
+  <li><a href="http://www.xiyou.edu.cn/zsjy/bysjy1.htm" target="_blank">毕业生就业</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/hzjl/gjjlgk1.htm">合作交流</a>
+
+<ul>
+  <li><a href="http://fao.xupt.edu.cn/">国际合作与交流</a></li>
+  <li><a href="http://www.xiyou.edu.cn/hzjl/xqhz1.htm">校企合作</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/xysh/xsh3.htm">校园生活</a>
+
+<ul>
+  <li><a href="http://www.xiyou.edu.cn/xysh/xsh3.htm">学生会</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xysh/yjsh1.htm">研究生会</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xysh/xywh1.htm">校园文化</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xysh/jxj1.htm">奖学金</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xysh/qgzx1.htm">勤工助学</a></li>
+</ul>
+</li>
+<li><a href="http://www.xiyou.edu.cn/xxfw/xywjs.htm">信息服务</a>
+
+<ul>
+  <li><a href="http://www.xiyou.edu.cn/xxfw/xywjs.htm">校园网建设</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xxfw/jyzy1.htm">教育资源</a></li>
+  <li><a href="http://www.xiyou.edu.cn/xxfw/cyfw1.htm">常用服务</a></li>
+</ul>
+</li>
+<li><a href="http://xyzh.xupt.edu.cn/" target="_blank">西邮校友</a>
+</li>
+</ul>
+</div></ul></div></div><!--navBox end--><!--banner start-->
+<div class="bannerBox" style="height: auto">
+<div class="slide-main" id="touchMain"><a class="prev" href="javascript:;" stat="prev1001"><img src="./西安邮电大学_files/l-btn.png"></a> 
+<div class="slide-box" id="slideContent">
+
+    <script language="javascript" src="./西安邮电大学_files/dynclicks.js"></script>    
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/5.13.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide banAnimate" id="bgstylea" style="display: block; opacity: 1; z-index: 8;">
+                        <img src="./西安邮电大学_files/4.4.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/8.30.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/3.30.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/10.27.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/4.15.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/418.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/4.14.jpg" border="0">                                                
+                     
+   </div>     
+ <div class="slide" id="bgstylea" style="display: none; opacity: 0.5; z-index: 0;">
+                        <img src="./西安邮电大学_files/51.jpg" border="0">                                                
+                     
+   </div>     
+
+
+
+
+</div><a class="next" href="javascript:;" stat="next1002"><img src="./西安邮电大学_files/r-btn.png"></a> 
+
+
+
+</div>
+<div class="clear_both"></div></div><!--banner end-->
+
+
+
+<!--conMidBox start-->
+<div class="conMidBox">
+<div class="conMid">
+<div class="conMid1 fl">
+<div class="titBox">
+<div class="tit fl"><a href="http://www.xiyou.edu.cn/xwzx/xyyw.htm">西邮要闻</a></div>
+<div class="more1 fr"><a href="http://news.xupt.edu.cn/" target="_blank">进入新闻网</a> </div>
+<div class="clear_both"></div></div>
+<div class="conMid1_img">
+<link href="./西安邮电大学_files/imagechangenews.css" type="text/css" rel="stylesheet">
+<script language="javascript" src="./西安邮电大学_files/imagechangenews.js"></script><script language="JavaScript">
+var u_u5_icn = new ImageChangeNews("u_u5_", 370, 248, 8, 2.0, false, false, false, true);
+
+//初始化图片, 并启动定时
+function u_u5_init_img()
+{
+
+    u_u5_icn.addimg("\/__local\/6\/43\/24\/5DB85C1DC3A10D7A0D4465EC2D0_1150BAF2_17312.jpg", "http:\/\/news.xupt.edu.cn\/info\/1002\/21217.htm", "", "","【本科教育教学审核评估】学校召开本科教育教学审核评估线上评估启动会");
+
+    u_u5_icn.addimg("\/__local\/8\/44\/CB\/1653244F09F155EE19B60D0C82F_2AE52304_1BFFE.jpg", "http:\/\/news.xupt.edu.cn\/info\/1002\/21200.htm", "", "","【主题教育】强化理论学习 筑牢信仰之基——我校举办学习贯彻习近平新时代中国特色社会主义思想主题教育读书班");
+
+    u_u5_icn.addimg("\/__local\/C\/4C\/7E\/36F33CB885D521B6C6902557966_F8CC8F2A_1B92E.jpg", "http:\/\/news.xupt.edu.cn\/info\/1002\/21168.htm", "", "","【主题教育】我校召开学习贯彻习近平新时代中国特色社会主义思想主题教育动员大会");
+
+    u_u5_icn.addimg("\/__local\/2\/15\/34\/FC50773DB0A24630DD56F993101_7937FC83_1ACDF.jpg", "http:\/\/news.xupt.edu.cn\/info\/1002\/20957.htm", "", "","校党委召开党群部门工作会和书记例会");
+
+    u_u5_icn.addimg("\/__local\/8\/9F\/5F\/AA6D7D25E99E98994508BF6FA5D_03596E40_1C3BE.jpg", "http:\/\/news.xupt.edu.cn\/info\/1002\/20929.htm", "", "","【学习贯彻党的二十大精神】我校举办处级以上领导干部学习贯彻党的二十大精神专题学习班");
+
+    u_u5_icn.addimg("\/__local\/F\/6F\/43\/A8519153D98AB65FA53D75319D9_57D3F6CB_1A874.jpg", "http:\/\/news.xupt.edu.cn\/info\/1002\/20921.htm", "", "","学校召开第五届教职工代表大会第八次会议");
+
+    u_u5_icn.changeimg(0);
+}
+</script><div align="center" display="none" style="overflow:hidden;text-overflow:ellipsis;height:0px;width:370px;"><a target="_blank" class="titlestyle44398" id="u_u5_newstitle" href="http://news.xupt.edu.cn/info/1002/21168.htm" title="【主题教育】我校召开学习贯彻习近平新时代中国特色社会主义思想主题教育动员大会"></a></div><div align="left" display="none" style="overflow:hidden;text-overflow:ellipsis;height:0px;width:370px;padding-left:2px;padding-right:2px"><a target="_blank" class="summarystyle44398" id="u_u5_newssummary"></a></div><table cellspacing="0" cellpadding="0" border="0" style="padding:0px margin:0px; border:0px">
+    <tbody><tr><td>
+        <div style="OVERFLOW: hidden;height:248px;width:370px">
+            <div id="u_u5_div" align="center" style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;FILTER: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:248px;width:370px">
+                <div id="u_u5_imgdiv" style="padding:0px;border:0px;"><a id="u_u5_url" target="_blank" href="http://news.xupt.edu.cn/info/1002/21168.htm"><img id="u_u5_pic" border="0" width="370" height="248" src="./西安邮电大学_files/36F33CB885D521B6C6902557966_F8CC8F2A_1B92E.jpg"></a></div>
+            </div>
+            <div style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:370px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
+<a href="javascript:u_u5_icn.changeimg(0)" ;="" id="u_u5_selectNode0" class="imagechangenews_pnode" target="_self">1</a><a href="javascript:u_u5_icn.changeimg(1)" ;="" id="u_u5_selectNode1" class="imagechangenews_pnode" target="_self">2</a><a href="javascript:u_u5_icn.changeimg(2)" ;="" id="u_u5_selectNode2" class="imagechangenews_fnode" target="_self">3</a><a href="javascript:u_u5_icn.changeimg(3)" ;="" id="u_u5_selectNode3" class="imagechangenews_pnode" target="_self">4</a><a href="javascript:u_u5_icn.changeimg(4)" ;="" id="u_u5_selectNode4" class="imagechangenews_pnode" target="_self">5</a><a href="javascript:u_u5_icn.changeimg(5)" ;="" id="u_u5_selectNode5" class="imagechangenews_pnode" target="_self">6</a>
+            </div></div></td></tr>
+   
+</tbody></table><script language="JavaScript">u_u5_init_img();</script></div>
+<ul class="conMid_ul1">
+<div id="scrollupjsu6js" class="winstyle44417" style="OVERFLOW: hidden; WIDTH: 370px; HEIGHT: 96px">
+    <div id="scrollup1jsu6js" style="height: 220px;"><br>
+        <table class="winstyle44417">
+        
+            <tbody><tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21253.htm" title="我校集成电路现代产业学院入选省级现代产业学院" target="_blank">
+                    <span class="titlestyle44417">我校集成电路现代产业学院入选省级...</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21249.htm" title="我校召开关工委2023年工作会议" target="_blank">
+                    <span class="titlestyle44417">我校召开关工委2023年工作会议</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21246.htm" title="校领导带队检查“五一”劳动节前后校园安全稳定工作" target="_blank">
+                    <span class="titlestyle44417">校领导带队检查“五一”劳动节前后...</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21244.htm" title="我校举办“学习二十大 永远跟党走 奋进新征程”2023年五四表彰大会暨第十一届团支部风采大赛" target="_blank">
+                    <span class="titlestyle44417">我校举办“学习二十大 永远跟党走 ...</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21240.htm" title="【主题教育】学校党委理论学习中心组召开学习贯彻习近平新时代中国特色社会主义思想主题教育专题交流研讨会" target="_blank">
+                    <span class="titlestyle44417">【主题教育】学校党委理论学习中心...</span></a>
+                    
+                    <span class="timestyle44417">04-27</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21230.htm" title="【主题教育】副校长韩江卫参加保卫处（武装部）、校友工作办公室党支部主题党日活动" target="_blank">
+                    <span class="titlestyle44417">【主题教育】副校长韩江卫参加保卫...</span></a>
+                    
+                    <span class="timestyle44417">04-25</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+        </tbody></table>
+    </div>
+    <div id="scrollup2jsu6js" style="height: 220px;"><br>
+        <table class="winstyle44417">
+        
+            <tbody><tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21253.htm" title="我校集成电路现代产业学院入选省级现代产业学院" target="_blank">
+                    <span class="titlestyle44417">我校集成电路现代产业学院入选省级...</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21249.htm" title="我校召开关工委2023年工作会议" target="_blank">
+                    <span class="titlestyle44417">我校召开关工委2023年工作会议</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21246.htm" title="校领导带队检查“五一”劳动节前后校园安全稳定工作" target="_blank">
+                    <span class="titlestyle44417">校领导带队检查“五一”劳动节前后...</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21244.htm" title="我校举办“学习二十大 永远跟党走 奋进新征程”2023年五四表彰大会暨第十一届团支部风采大赛" target="_blank">
+                    <span class="titlestyle44417">我校举办“学习二十大 永远跟党走 ...</span></a>
+                    
+                    <span class="timestyle44417">04-28</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21240.htm" title="【主题教育】学校党委理论学习中心组召开学习贯彻习近平新时代中国特色社会主义思想主题教育专题交流研讨会" target="_blank">
+                    <span class="titlestyle44417">【主题教育】学校党委理论学习中心...</span></a>
+                    
+                    <span class="timestyle44417">04-27</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+            <tr>
+                <td><span><img src="./西安邮电大学_files/xy_img_38.png" align="absmiddle" border="0"></span></td>
+                <td style="font-size:9pt">
+                    
+                    <a href="http://news.xupt.edu.cn/info/1002/21230.htm" title="【主题教育】副校长韩江卫参加保卫处（武装部）、校友工作办公室党支部主题党日活动" target="_blank">
+                    <span class="titlestyle44417">【主题教育】副校长韩江卫参加保卫...</span></a>
+                    
+                    <span class="timestyle44417">04-25</span>
+                    <span></span>
+                </td>
+                <td width="1" style="padding:0px;border:0px;visibility:hidden"><span class="titlestyle44417" style="width:1px"></span></td>
+                </tr>
+        
+        </tbody></table>
+    </div>
+</div>
+<script> 
+    function scrollupMarqueejsu6js()
+    { 
+        try
+        {
+            var scrollup = document.getElementById("scrollupjsu6js");
+            var scrollup1 = document.getElementById("scrollup1jsu6js");
+    
+            //滚动到头继续滚
+            if(scrollup.scrollTop + scrollup.clientHeight == scrollup.scrollHeight)
+            {
+                scrollup.scrollTop-=scrollup1.clientHeight-1; 
+            }
+            else
+            {
+                scrollup.scrollTop++;
+            }
+            
+        } 
+        catch(e)
+        {
+        }
+    } 
+    var scrollupMyMarjsu6js;
+    function scrollupfunjsu6js()
+    {
+        var speed = 80; 
+        var scrollup = document.getElementById("scrollupjsu6js");
+        var scrollup1 = document.getElementById("scrollup1jsu6js");
+        var scrollup2 = document.getElementById("scrollup2jsu6js");
+        
+        scrollup2.innerHTML=scrollup1.innerHTML;
+        
+        if(scrollup1.scrollHeight == 0 || scrollup1.scrollHeight < 96)
+        {
+            scrollup1.style.height="96px";
+        }
+        else
+        {
+            scrollup1.style.height=scrollup1.scrollHeight + "px";
+        }
+
+        if(scrollup2.scrollHeight == 0 || scrollup2.scrollHeight < 96)
+        {
+            scrollup2.style.height="96px";
+        }
+        else
+        {
+            scrollup2.style.height=scrollup2.scrollHeight + "px";
+        }
+    
+        scrollupMyMarjsu6js=setInterval(scrollupMarqueejsu6js,speed); 
+        scrollup.onmouseover=function() {clearInterval(scrollupMyMarjsu6js)} 
+        scrollup.onmouseout=function() {scrollupMyMarjsu6js=setInterval(scrollupMarqueejsu6js,speed)} 
+    }
+    window.setTimeout(scrollupfunjsu6js, 0);
+</script></ul></div>
+<div class="conMid1 fl" style="margin: 0px 45px">
+<div class="titBox">
+<div class="tit fl">综合新闻</div>
+<div class="more fr"><a href="http://www.xiyou.edu.cn/xwzx/zhxw.htm">更多</a> </div>
+<div class="clear_both"></div></div>
+<ul class="conMid_ul2"><script language="javascript" src="./西安邮电大学_files/ajax.js"></script><li><a href="http://news.xupt.edu.cn/info/1004/21248.htm" target="_blank" title="我校举行”乡村振兴”主题摄影展美育教学实践活动"><span>04-28</span>我校举行”乡村振兴”主题摄影展美育...</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21250.htm" target="_blank" title="经济与管理学院邀请沈阳跃客教育科技有限公司总裁付伟来校作专题报告"><span>04-28</span>经济与管理学院邀请沈阳跃客教育科技...</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21243.htm" target="_blank" title="我校开展2023年爱国卫生月活动"><span>04-28</span>我校开展2023年爱国卫生月活动</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21245.htm" target="_blank" title="我校荣获第五届智慧高校CIO武汉论坛“智慧高校数字化转型飞跃奖”"><span>04-28</span>我校荣获第五届智慧高校CIO武汉论坛“...</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21242.htm" target="_blank" title="自动化学院成功举办第十八届全国大学生智能汽车竞赛校内选拔赛"><span>04-28</span>自动化学院成功举办第十八届全国大学...</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21236.htm" target="_blank" title="探访社会发展，助力乡村振兴——网络与新媒体专业开展乡村振兴主题《摄影与新闻采写》集中实践教学"><span>04-27</span>探访社会发展，助力乡村振兴——网络...</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21238.htm" target="_blank" title="我校4门课程获批省级特色线上课程建设项目"><span>04-27</span>我校4门课程获批省级特色线上课程建设...</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21232.htm" target="_blank" title="探访社会发展，助力乡村振兴 ——网络与新媒体专业开展乡村振兴主题《摄影与新闻采写》集中实践教学"><span>04-26</span>探访社会发展，助力乡村振兴 ——网络...</a> </li>
+<li><a href="http://news.xupt.edu.cn/info/1004/21233.htm" target="_blank" title="【主题教育】离退休党委、离退休服务处组织开展“沿着总书记足迹看变化悟思想”主题实践研学活动"><span>04-26</span>【主题教育】离退休党委、离退休服务...</a> </li>
+<script>_showDynClickBatch(['dynclicks_u7_80420','dynclicks_u7_80419','dynclicks_u7_80418','dynclicks_u7_80417','dynclicks_u7_80416','dynclicks_u7_80411','dynclicks_u7_80409','dynclicks_u7_80406','dynclicks_u7_80405'],[80420,80419,80418,80417,80416,80411,80409,80406,80405],"wbnews", 1409300838)</script>
+</ul></div>
+<div class="conMid1 fr">
+<div class="titBox">
+<div class="tit fl">媒体关注</div>
+<div class="more fr"><a href="http://www.xiyou.edu.cn/xwzx/mtgz.htm" target="_blank">更多</a> </div>
+<div class="clear_both"></div></div>
+<ul class="conMid_ul3">
+     
+ <li><a href="https://xzzsx.sxdaily.com.cn/app/template/displayTemplate/news/newsDetail/5564/10152870.html?isShare=true" target="_blank" title="【群众新闻网】振兴故事：特别的观察和体验，特别的记录和讲述">【群众新闻网】振兴故事：特别的观察和...</a><i>2023-04-27</i> </li>
+      
+     
+ <li><a href="https://www.sxdaily.com.cn/2023-04/20/content_10138762.html#10006-weixin-1-52626-6b3bffd01fdde4900130bc5a2751b6d1" target="_blank" title="【群众新闻网】2022-2023陕西经济年会在西安举办 激发陕商发展新动能">【群众新闻网】2022-2023陕西经济年会在...</a><i>2023-04-21</i> </li>
+      
+     
+ <li><a href="http://m.cnwest.com/sxxw/a/2023/04/19/21425510.html" target="_blank" title="【西部网】数实融合，砼享未来——绿色建材产业数字化高质量发展大会召开">【西部网】数实融合，砼享未来——绿色...</a><i>2023-04-21</i> </li>
+      
+     
+ <li><a href="http://epaper.xiancn.com/newxawb/pc/html/202304/21/content_144789.html" target="_blank" title="【西安日报】数字治理助推智慧社会新发展">【西安日报】数字治理助推智慧社会新发展</a><i>2023-04-21</i> </li>
+      
+     
+ <li><a href="http://jyt.shaanxi.gov.cn/jynews/rdjj/202304/19/131372.html" target="_blank" title="【陕西省教育厅】陕西师生开展第八个全民国家安全教育日主题活动">【陕西省教育厅】陕西师生开展第八个全...</a><i>2023-04-19</i> </li>
+      
+     
+ <li><a href="http://jyt.shaanxi.gov.cn/jynews/rdjj/202304/07/131081.html" target="_blank" title="【陕西省教育厅】清风祭英魂：陕西师生开展2023年清明祭英烈活动">【陕西省教育厅】清风祭英魂：陕西师生...</a><i>2023-04-10</i> </li>
+      
+<script>_showDynClickBatch(['dynclicks_u8_80408','dynclicks_u8_80371','dynclicks_u8_80370','dynclicks_u8_80369','dynclicks_u8_80390','dynclicks_u8_80302'],[80408,80371,80370,80369,80390,80302],"wbnews", 1409300838)</script>
+</ul></div></div></div><!--conMidBox end--><!--kuijie start-->
+<div class="conMidBox2">
+<div class="conMid">
+<div class="conMid1 fl">
+<div class="titBox">
+<div class="tit fl">通知公告</div>
+<div class="more fr"><a href="http://www.xiyou.edu.cn/tzxx/tzgg.htm">更多</a> </div>
+<div class="clear_both"></div></div>
+<ul class="conMid_ul4">       <li>  
+      <span><b>28</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80412.htm" target="_blank" title="西安邮电大学关于进一步严明2023年“五一”端午期间纪律作风要求的通知">·&nbsp;西安邮电大学关于进一步严明2023年...</a>
+      </li>
+      
+      
+       <li>  
+      <span><b>27</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80407.htm" target="_blank" title="招标结果公示">·&nbsp;招标结果公示</a>
+      </li>
+      
+      
+       <li>  
+      <span><b>26</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80404.htm" target="_blank" title="关于在学习贯彻习近平新时代中国特色社会主义思想主题教育中畅通师生意见建议反映渠道的通知">·&nbsp;关于在学习贯彻习近平新时代中国特...</a>
+      </li>
+      
+      
+       <li>  
+      <span><b>23</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80379.htm" target="_blank" title="关于举办“中兴捧月杯”西安邮电大学第三届研究生人工智能竞赛暨第五届中国研究生人工智能创新大赛选拔赛的通知">·&nbsp;关于举办“中兴捧月杯”西安邮电大...</a>
+      </li>
+      
+      
+       <li>  
+      <span><b>19</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80366.htm" target="_blank" title="招标公告">·&nbsp;招标公告</a>
+      </li>
+      
+      
+       <li>  
+      <span><b>18</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80356.htm" target="_blank" title="西安邮电大学“关于2023年学生证、校徽、毕业证封皮、学位证封皮、学位证芯、校历采购项目”废标公告">·&nbsp;西安邮电大学“关于2023年学生证、...</a>
+      </li>
+      
+      
+       <li>  
+      <span><b>14</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80327.htm" target="_blank" title="关于组织我校“网安杯”第二届信息安全竞赛暨第十六届全国大学生信息安全竞赛（作品赛）选拔赛的通知">·&nbsp;关于组织我校“网安杯”第二届信息...</a>
+      </li>
+      
+      
+       <li>  
+      <span><b>10</b>/04</span>
+      
+      <a href="http://www.xiyou.edu.cn/info/2104/80301.htm" target="_blank" title="关于组织我校第十一届全国大学生光电设计竞赛的通知">·&nbsp;关于组织我校第十一届全国大学生光...</a>
+      </li>
+      
+      
+
+
+<script>_showDynClickBatch(['dynclicks_u10_80412','dynclicks_u10_80407','dynclicks_u10_80404','dynclicks_u10_80379','dynclicks_u10_80366','dynclicks_u10_80356','dynclicks_u10_80327','dynclicks_u10_80301'],[80412,80407,80404,80379,80366,80356,80327,80301],"wbnews", 1409300838)</script>
+</ul></div>
+<div class="conMid1 fl" style="margin: 0px 45px">
+<div class="titBox">
+<div class="tit fl">学术信息</div>
+<div class="more fr"><a href="http://www.xiyou.edu.cn/tzxx/xsxx.htm">更多</a> </div>
+<div class="clear_both"></div></div>
+<ul class="conMid_ul5">    
+      <li>
+    <div class="date_time">
+        <div class="day">06</div>
+        <div class="date_t">2023-04</div>
+        
+    </div>
+    <div class="tit_zhaiy"> 
+   <a href="http://www.xiyou.edu.cn/info/2105/80286.htm" class="tit_z" target="_blank" title="关于举办李康研究员学术讲座的通知">关于举办李康研究员学术讲座...</a>    <div class="t_zhaiy">各学院：应电子工程学院陕西省微波光子...</div>
+    </div>
+    </li>
+    
+      <li>
+    <div class="date_time">
+        <div class="day">21</div>
+        <div class="date_t">2023-03</div>
+        
+    </div>
+    <div class="tit_zhaiy"> 
+   <a href="http://www.xiyou.edu.cn/info/2105/80174.htm" class="tit_z" target="_blank" title="关于举办西邮人文大讲堂的通知">关于举办西邮人文大讲堂的通知</a>    <div class="t_zhaiy">​各部门、各单位：为深入学习宣传贯彻...</div>
+    </div>
+    </li>
+    
+      <li>
+    <div class="date_time">
+        <div class="day">13</div>
+        <div class="date_t">2023-03</div>
+        
+    </div>
+    <div class="tit_zhaiy"> 
+   <a href="http://www.xiyou.edu.cn/info/2105/80140.htm" class="tit_z" target="_blank" title="关于举办郭斌博士学术讲座的通知">关于举办郭斌博士学术讲座的通知</a>    <div class="t_zhaiy">​各部门、各单位：应我校陕西省网络分...</div>
+    </div>
+    </li>
+    
+      <li>
+    <div class="date_time">
+        <div class="day">09</div>
+        <div class="date_t">2023-03</div>
+        
+    </div>
+    <div class="tit_zhaiy"> 
+   <a href="http://www.xiyou.edu.cn/info/2105/80116.htm" class="tit_z" target="_blank" title="关于举办苏晓龙教授学术讲座的通知">关于举办苏晓龙教授学术讲座...</a>    <div class="t_zhaiy">​各部门、各单位：应电子工程学院和科...</div>
+    </div>
+    </li>
+<script>_showDynClickBatch(['dynclicks_u11_80286','dynclicks_u11_80174','dynclicks_u11_80140','dynclicks_u11_80116'],[80286,80174,80140,80116],"wbnews", 1409300838)</script>
+</ul></div>
+<div class="conMid1 fr">
+<div class="titBox">
+<div class="tit fl">专题栏</div>
+<div class="more fr"></div>
+<div class="clear_both"></div></div>
+<ul class="conMid_ul6"><li><a href="http://zhaosheng.xupt.edu.cn/" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5409)" class="zt_1">本科生招生</a></li>
+
+
+
+<li><a href="http://gr.xupt.edu.cn/" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5410)" class="zt_2">研究生招生</a></li>
+
+
+
+<li><a href="http://rsc.xupt.edu.cn/rcysz/rczp.htm" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5416)" class="zt_3">招聘专栏</a></li>
+
+
+
+<li><a href="http://jiuye.xupt.edu.cn/" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5411)" class="zt_4">就业指南</a></li>
+
+
+
+<li><a href="https://ztc.xupt.edu.cn:3000/" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5412)" class="zt_5">信息直通车</a></li>
+
+
+
+<li><a href="http://cwc.xupt.edu.cn/xxgkw1/xxsy.htm" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5413)" class="zt_6">财务信息公开</a></li>
+
+
+
+<li><a href="http://pinggu.xupt.edu.cn/" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5414)" class="zt_7">审核评估网</a></li>
+
+
+
+<li><a href="http://xiaoban.xupt.edu.cn/xxgk.htm" target="_blank" title="" onclick="_addDynClicks(&quot;wburl&quot;, 1409300838, 5415)" class="zt_8">信息公开</a></li>
+
+
+
+
+<div class="clear_both"></div></ul>
+<div class="zt_imgBox"><!-- Demo start --><!-- css --><!-- html -->
+<div class="ck-slide">
+<div class="ck-slide-dir"><ul class="ck-slide-wrapper" style="width: 1110px; margin-left: -370px;">                           <li style="float: left; position: relative; margin-left: 0px;"> <a href="http://jiwei.xupt.edu.cn/" title="" onclick="_addDynClicks(&quot;wbimage&quot;, 1409300838, 12153)" target="_blank">
+                            <img src="./西安邮电大学_files/qlxxjs.jpg" border="0" width="370" height="75">
+                        </a>  </li>
+
+            
+                       <li style="float: left; position: relative; margin-left: 0px;"> <a href="http://jdbf.xupt.edu.cn/" title="" onclick="_addDynClicks(&quot;wbimage&quot;, 1409300838, 12152)" target="_blank">
+                            <img src="./西安邮电大学_files/fp.png" border="0" width="370" height="75">
+                        </a>  </li>
+
+            
+                       <li style="float: left; position: relative; margin-left: 0px;"> <a href="http://xyddh.xupt.edu.cn/" title="" onclick="_addDynClicks(&quot;wbimage&quot;, 1409300838, 12151)" target="_blank">
+                            <img src="./西安邮电大学_files/scztw.jpg" border="0" width="370" height="75">
+                        </a>  </li>
+
+            
+
+
+
+
+
+
+</ul></div><a class="ctrl-slide ck-prev" href="javascript:;">上一张</a> <a class="ctrl-slide ck-next" href="javascript:;">下一张</a> </div><!-- js --><script src="./西安邮电大学_files/rye.min.js"></script><!--<script src="newWeb/style/slide.min.js"></script>
+
+--><script src="./西安邮电大学_files/slide.js"></script><script>
+            $('.ck-slide').ckSlide({
+                autoPlay: true,//默认为不自动播放，需要时请以此设置
+                dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+                interval:3000//默认间隔2000毫秒
+                
+            });
+        </script><!-- Demo end --></div></div></div></div><!--conMidBox end--><!--foot-top start-->
+<div class="foot-topBox">
+<div class="foot-top">
+<div class="foot_1 fl">
+<div class="foot_tit">雁塔校区</div>
+<div class="foot_dz"><script language="javascript" src="./西安邮电大学_files/mp4video.js"></script>
+<p>电话：029-85383106</p> 
+<p>邮政编码：710061</p> 
+<p>雁塔校区地址：西安市长安南路563号</p></div>
+<div class="foot_tit">长安校区</div>
+<div class="foot_dz">
+<p>电话：029-88166105</p> 
+<p>邮政编码：710121</p> 
+<p>长安校区地址：西安市长安区西长安街618号</p></div></div><a class="foot_2 fl" href="http://www.xiyou.edu.cn/index.htm"></a>
+<div class="foot_3 fr">
+<div class="foot_tit">关注我们</div>
+<div class="foot_ewm fl">    <table align="center">
+            <tbody><tr>
+                <td>
+                        <img src="./西安邮电大学_files/foot_ewm_30.png" border="0" width="100" height="100">
+                </td>
+        </tr>
+</tbody></table></div>
+<div class="foot_fx fr" style="margin-top: 30px">
+<center><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/27/000/0000/60096777/CA270000000600967770001.js' type='text/javascript'%3E%3C/script%3E"));</script><span id="_ideConac"><a href="https://bszs.conac.cn/sitename?method=show&amp;id=0AD91F7534AD41B3E053012819AC8EE3" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="./西安邮电大学_files/blue.png" data-bd-imgshare-binded="1"></a></span><script src="./西安邮电大学_files/CA270000000600967770001.js" type="text/javascript"></script><span id="_ideConac"></span></center></div>
+<div class="clear_both"></div>
+<div class="foot_tit">友情链接</div>
+<div class="foot_link">    
+    
+    
+    
+  
+
+    
+<script language="javascript">    
+<!--    
+    function doLinksu17(o)    
+    {    
+        var link=document.getElementsByName("su17")[0];    
+        var index=link.selectedIndex;    
+        if (index==-1 || index>=link.options.length)    
+        {    
+          return;    
+        }    
+        var value = link.options[index].value;    
+        var obj = document.getElementById("hu17");    
+        obj.href = value;
+        var wburlid =link.options[index].getAttribute("aa44395aa");
+        _addDynClicks('wburl',1409300838,wburlid)
+            
+                     obj.target = "_blank"
+                    
+         if(document.all){
+          obj.click();     
+        }         
+         else 
+        { 
+          window.open(value);
+         }
+       
+       if(o.selectedIndex != 0)    
+       {    
+           o.selectedIndex = 0;    
+       }    
+    }    
+-->    
+</script>  
+<table>    
+    <tbody><tr><td align="center">    
+            <span class="titlestyle44395"></span> <a id="hu17"></a>    
+            <select name="su17" class="selectstyle44395" onchange="doLinksu17(this)">    
+                <option value="">　　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　--&nbsp;相关链接&nbsp;--&nbsp;</option>    
+                <option vsbhrefname="value" aa44395aa="5423" value="http://gxpx1.ceat.edu.cn/index.php/index">教育干部培训网    
+                </option><option vsbhrefname="value" aa44395aa="5419" value="http://www.njupt.edu.cn/">南京邮电大学    
+                </option><option vsbhrefname="value" aa44395aa="5424" value="http://www.cqupt.edu.cn/">重庆邮电大学    
+                </option><option vsbhrefname="value" aa44395aa="5426" value="http://www.bupt.edu.cn/">北京邮电大学    
+                </option><option vsbhrefname="value" aa44395aa="5417" value="http://gxt.shaanxi.gov.cn/">陕西省工信厅    
+                </option><option vsbhrefname="value" aa44395aa="5422" value="http://kjt.shaanxi.gov.cn/">陕西省科技厅    
+                </option><option vsbhrefname="value" aa44395aa="5425" value="http://jyt.shaanxi.gov.cn/">陕西省教育厅    
+                </option><option vsbhrefname="value" aa44395aa="5418" value="http://www.miit.gov.cn/">国家工信部    
+                </option><option vsbhrefname="value" aa44395aa="5420" value="http://www.most.gov.cn/">国家科技部    
+                </option><option vsbhrefname="value" aa44395aa="5421" value="http://www.moe.gov.cn/">国家教育部    
+                </option><option vsbhrefname="value" aa44395aa="5427" value="http://www.626china.com/">中国禁毒展览馆    
+                </option></select>    
+        </td></tr><tr></tr></tbody></table></div></div></div></div><!--foot-top end-->
+<div class="footBox">
+<div class="foot">版权所有：西安邮电大学 2011-2023 中国西安长安南路563号 <a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备05001585号-1</a> </div></div>
+   
+   
+   
+   
+   
+
+
+</body></html>

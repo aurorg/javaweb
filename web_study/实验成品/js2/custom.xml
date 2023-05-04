@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+
+    <customer>
+        <customer_id>001</customer_id>
+        <customer_name>丽丽</customer_name>
+        <customer_address>
+            <street_address>陕西安康</street_address>
+            <city>陕西</city>
+            <state>安康市</state>
+            <zip>888888</zip>
+            <country>中国</country>
+        </customer_address>
+        <phone>18292059544</phone>
+    </customer>
+
+    <customer>
+        <customer_id>002</customer_id>
+        <customer_name>娜娜</customer_name>
+        <customer_address>
+            <street_address>陕西咸阳</street_address>
+            <city>陕西</city>
+            <state>咸阳市</state>
+            <zip>666666</zip>
+            <country>中国</country>
+        </customer_address>
+        <phone>17342951718</phone>
+    </customer>
+
+</customers>
