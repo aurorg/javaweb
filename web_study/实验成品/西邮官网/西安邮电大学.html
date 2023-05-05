@@ -112,6 +112,8 @@ setHomepagea44386a()函数用于将当前网页设为浏览器的首页。
  */
 
 </script>
+
+
 <table width="420">
     <tbody><tr>
         <td style="font-size: 9pt">
@@ -120,8 +122,13 @@ setHomepagea44386a()函数用于将当前网页设为浏览器的首页。
     </tr>
 </tbody></table></div>
 <div class="searchBox fr"><script type="text/javascript">
+
+    /*
+    这段代码包含一个HTML 表格，其中一行包含一个单元格。该单元格包含用于将页面设置为主页、将其添加到收藏夹和导航至网站地图的链接，以及用于切换到英文版站点和访问特定服务的链接。
+     在表格下方，有一个带有名为“_nl_ys_check”的JavaScript 函数的搜索框。当用户单击搜索按钮时会触发该功能。
+     */
+
     function _nl_ys_check(){
-        
         var keyword = document.getElementById('showkeycode44384').value;
         if(keyword==null||keyword==""){
             alert("请输入你要检索的内容！");
@@ -138,8 +145,15 @@ setHomepagea44386a()函数用于将当前网页设为浏览器的首页。
         document.getElementById("lucenenewssearchkey44384").value = base64.encode(document.getElementById("lucenenewssearchkey44384").value);
         new VsbFormFunc().disableAutoEnable(document.getElementById("showkeycode44384"));
         return true;
-    } 
+    }
+    /*
+    该函数的目的是验证用户输入的搜索输入。如果输入为空，该函数将显示一条警告消息，要求用户输入搜索查询。
+    如果输入不为空，该函数将使用 Base64 对其进行编码，并将编码后的值存储在名为“lucenenewssearchkey44384”的隐藏输入字段中。
+    该函数还禁用搜索按钮以防止多次单击，然后返回 true 以允许提交表单。
+    此代码用于在网页上显示链接和搜索框，并向搜索框添加功能。
+     */
 </script>
+
 <form action="http://www.xiyou.edu.cn/newWeb/new_search.jsp?wbtreeid=1288" method="post" id="au2a" name="au2a" onsubmit="return _nl_ys_check()" style="display: inline">
  <input type="hidden" id="lucenenewssearchkey44384" name="lucenenewssearchkey" value=""><input type="hidden" id="_lucenesearchtype44384" name="_lucenesearchtype" value="1"><input type="hidden" id="searchScope44384" name="searchScope" value="1">
  <div style="margin:0px;margin-top:3px;display:inline;font-size:12px;">
@@ -334,6 +348,7 @@ function u_u5_init_img()
 
     u_u5_icn.changeimg(0);
 }
+
 </script><div align="center" display="none" style="overflow:hidden;text-overflow:ellipsis;height:0px;width:370px;"><a target="_blank" class="titlestyle44398" id="u_u5_newstitle" href="http://news.xupt.edu.cn/info/1002/21168.htm" title="【主题教育】我校召开学习贯彻习近平新时代中国特色社会主义思想主题教育动员大会"></a></div><div align="left" display="none" style="overflow:hidden;text-overflow:ellipsis;height:0px;width:370px;padding-left:2px;padding-right:2px"><a target="_blank" class="summarystyle44398" id="u_u5_newssummary"></a></div><table cellspacing="0" cellpadding="0" border="0" style="padding:0px margin:0px; border:0px">
     <tbody><tr><td>
         <div style="OVERFLOW: hidden;height:248px;width:370px">
@@ -343,6 +358,20 @@ function u_u5_init_img()
             <div style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:370px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
 <a href="javascript:u_u5_icn.changeimg(0)" ;="" id="u_u5_selectNode0" class="imagechangenews_pnode" target="_self">1</a><a href="javascript:u_u5_icn.changeimg(1)" ;="" id="u_u5_selectNode1" class="imagechangenews_pnode" target="_self">2</a><a href="javascript:u_u5_icn.changeimg(2)" ;="" id="u_u5_selectNode2" class="imagechangenews_fnode" target="_self">3</a><a href="javascript:u_u5_icn.changeimg(3)" ;="" id="u_u5_selectNode3" class="imagechangenews_pnode" target="_self">4</a><a href="javascript:u_u5_icn.changeimg(4)" ;="" id="u_u5_selectNode4" class="imagechangenews_pnode" target="_self">5</a><a href="javascript:u_u5_icn.changeimg(5)" ;="" id="u_u5_selectNode5" class="imagechangenews_pnode" target="_self">6</a>
             </div></div></td></tr>
+
+<!--    调用的JavaScript 函数u_u5_init_img()，-->
+
+<!--    该函数调用addimg()方法u_u5_icn多次，传入不同的参数addimg()添加-->
+
+<!--    该函数然后调用changeimg()u_u5_icn要更改的对象上的方法-->
+
+<!--    在脚本标签之后，有一些HTML代码那u_u5_div， 哪个-->
+
+<!--    在幻灯片下方，还有另一个 div 包含用于导航幻灯片的链接。链接具有onclick调用changeimg()方法的属性u_u5_icn对象，将图像的索引传递给-->
+
+<!--    这新闻文章设置为display:none，这意味着它们默认隐藏。-->
+
+<!--    全面的，u_u5_icn对象，然后使用更改显示的图像changeimg()方法。-->
    
 </tbody></table><script language="JavaScript">u_u5_init_img();</script></div>
 <ul class="conMid_ul1">
@@ -430,6 +459,10 @@ function u_u5_init_img()
         
         </tbody></table>
     </div>
+<!--    代码HTML和JavaScript那HTML 代码由一个包含多行的表格组成，-->
+<!--    每行div元素具有固定的高度和宽度，并在 div 中添加一个滚动条，-->
+<!--    以便用户可以JavaScript 代码初始化一些图像元素-->
+
     <div id="scrollup2jsu6js" style="height: 220px;"><br>
         <table class="winstyle44417">
         
@@ -514,6 +547,7 @@ function u_u5_init_img()
         </tbody></table>
     </div>
 </div>
+
 <script> 
     function scrollupMarqueejsu6js()
     { 
@@ -570,6 +604,16 @@ function u_u5_init_img()
         scrollup.onmouseout=function() {scrollupMyMarjsu6js=setInterval(scrollupMarqueejsu6js,speed)} 
     }
     window.setTimeout(scrollupfunjsu6js, 0);
+
+//     scrollupMarqueejsu6js()和scrollupfunjsu6js()， 和超时函数使用window.setTimeout()打电话scrollupfunjsu6js()0 之后
+//
+//     这scrollupMarqueejsu6js()使用函数div元素ID为“scrollupjsu6js”。它首先ID “scrollupjsu6js”和“scrollTop, clientHeight,scrollHeight特性。scrollTop财产。否则，scrollTop财产。
+//
+// 该scrollupfunjsu6js()函数初始化滚动行为。它ID 为“scrollupjsu6js”、“scrollup1jsu6js”和“的div 元素scrollHeight财产。setInterval()使用方法scrollupMarqueejsu6js()功能于函数为_ _onmouseover和onmouseout事件
+//
+//     最后，该window.setTimeout()方法用于调用scrollupfunjsu6js()之后滚动行为被初始化。
+//
+// 总体而言，此代码块为 div 中显示的内容创建了平滑且连续的滚动效果ID “scrollupjsu6js”，使其成为网页上更具吸引力和动态的元素。
 </script></ul></div>
 <div class="conMid1 fl" style="margin: 0px 45px">
 <div class="titBox">
@@ -785,13 +829,7 @@ function u_u5_init_img()
                        <li style="float: left; position: relative; margin-left: 0px;"> <a href="http://xyddh.xupt.edu.cn/" title="" onclick="_addDynClicks(&quot;wbimage&quot;, 1409300838, 12151)" target="_blank">
                             <img src="./西安邮电大学_files/scztw.jpg" border="0" width="370" height="75">
                         </a>  </li>
-
-            
-
-
-
-
-
+    
 
 </ul></div><a class="ctrl-slide ck-prev" href="javascript:;">上一张</a> <a class="ctrl-slide ck-next" href="javascript:;">下一张</a> </div><!-- js --><script src="./西安邮电大学_files/rye.min.js"></script><!--<script src="newWeb/style/slide.min.js"></script>
 
@@ -837,7 +875,7 @@ function u_u5_init_img()
 
     
 <script language="javascript">    
-<!--    
+
     function doLinksu17(o)    
     {    
         var link=document.getElementsByName("su17")[0];    
@@ -866,8 +904,19 @@ function u_u5_init_img()
        {    
            o.selectedIndex = 0;    
        }    
-    }    
--->    
+    }
+// doLinksu17(o)当用户从名称为“su17”的下拉列表中选择一个选项时调用该函数。
+
+// selectedIndex该函数首先使用和方法检索所选选项的值和名为“aa44395aa”的属性getAttribute()。然后它将ID 为“hu17”的HTML 元素的 href 属性设置为检索到的值。此外，该_addDynClicks()函数以“aa44395aa”属性的值作为参数调用。此功能可能用于跟踪链接的点击次数。
+
+// 该函数将同一 HTML 元素的目标属性设置为“_blank”以在新选项卡或窗口中打开链接。
+
+// 如果浏览器是Internet Explorer，该函数使用 方法模拟点击 H​​TML 元素click()。否则，该函数使用该方法在新选项卡或窗口中打开链接window.open()。
+
+// 最后，如果所选选项的索引不为 0，则该函数会将下拉列表的所选索引重置为 0。
+
+// 这个代码块为下拉列表创建了一个动态的交互行为，允许用户通过选择不同的选项导航到不同的网页。此外，跟踪链接的点击次数是使用该_addDynClicks()函数实现的。
+
 </script>  
 <table>    
     <tbody><tr><td align="center">    
