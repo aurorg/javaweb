@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Product Search</title>
+  <style>
+    label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    input[type="text"] {
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    input[type="button"] {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <label for="search">Search:</label>
+  <input type="text" id="search" name="search">
+  <input type="button" value="Search" onclick="searchProducts()">
+</form>
+
+<table id="results">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+  function searchProducts() {
+    var search = document.getElementById("search").value;
+
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        displayResults(JSON.parse(this.responseText));
+      }
+    };
+    xhr.open("GET", "search.php?q=" + search, true);
+    xhr.send();
+  }
+
+  function displayResults(products) {
+    var table = document.getElementById("results").getElementsByTagName("tbody")[0];
+    table.innerHTML = "";
+
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+
+      var row = table.insertRow();
+      var nameCell = row.insertCell(0);
+      var priceCell = row.insertCell(1);
+      var descriptionCell = row.insertCell(2);
+
+      nameCell.innerHTML = product.name;
+      priceCell.innerHTML = product.price;
+      descriptionCell.innerHTML = product.description;
+    }
+  }
+</script>
+</body>
+</html>

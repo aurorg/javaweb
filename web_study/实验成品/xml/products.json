@@ -1,0 +1,22 @@
+[
+  {
+    "name": "iPhone_12",
+    "price": 7999,
+    "description": "Apple's latest iPhone"
+  },
+  {
+    "name": "Samsung Galaxy S21",
+    "price": 6999,
+    "description": "Samsung's latest flagship smartphone"
+  },
+  {
+    "name": "Sony WH-1000XM4",
+    "price": 2499,
+    "description": "Wireless noise-cancelling headphones"
+  },
+  {
+    "name": "Dell XPS 13",
+    "price": 9999,
+    "description": "High-end ultrabook"
+  }
+]
