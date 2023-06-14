@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>学生信息管理系统</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="demo02.css"> <!-- 引入外部样式表 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置移动端网页响应式布局 -->
+  <script src="caozuo.js"></script> <!-- 引入外部JavaScript文件 -->
+</head>
+
+<body>
+<header>
+  <h1>学生信息管理系统</h1> <!-- 显示网页标题 -->
+</header>
+
+<main>
+  <article>
+    <h2>学生信息</h2> <!-- 显示学生信息表格的标题 -->
+    <table id="tbl_student"> <!-- 表示学生信息表格 -->
+      <thead> <!-- 表头部分 -->
+      <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody> <!-- 表内容部分 -->
+      <tr>
+        <td>9</td>
+        <td>张坤</td>
+        <td>女</td>
+        <td>18</td>
+        <td><button type="button" onclick="editStudent(this)">编辑</button> *~* <button type="button" onclick="deleteStudent(this)">删除</button></td> <!-- 显示操作按钮 -->
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>史站丽</td>
+        <td>女</td>
+        <td>18</td>
+        <td><button type="button" onclick="editStudent(this)">编辑</button> *~* <button type="button" onclick="deleteStudent(this)">删除</button></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>哈哈哈</td>
+        <td>女</td>
+        <td>19</td>
+        <td><button type="button" onclick="editStudent(this)">编辑</button> *~* <button type="button" onclick="deleteStudent(this)">删除</button></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <button type="button" onclick="addStudent()">添加学生</button> <!-- 显示添加学生按钮 -->
+  </article>
+  <br>
+  <br>
+  <br>
+
+  <article>
+    <h2>课程信息</h2> <!-- 显示课程信息表格的标题 -->
+    <table id="tbl_course"> <!-- 表示课程信息表格 -->
+      <thead> <!-- 表头部分 -->
+      <tr>
+        <th>课程编号</th>
+        <th>课程名称</th>
+        <th>学分</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody> <!-- 表内容部分 -->
+      <tr>
+        <td>1</td>
+        <td>高等数学</td>
+        <td>5</td>
+        <td><button type="button" onclick="editCourse(this)">编辑</button> *~* <button type="button" onclick="deleteCourse(this)">删除</button></td> <!-- 显示操作按钮 -->
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>离散数学</td>
+        <td>4</td>
+        <td><button type="button" onclick="editCourse(this)">编辑</button> *~* <button type="button" onclick="deleteCourse(this)">删除</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>数据结构</td>
+        <td>4.5</td>
+        <td><button type="button" onclick="editCourse(this)">编辑</button> *~* <button type="button" onclick="deleteCourse(this)">删除</button></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <button type="button" onclick="addCourse()">添加课程</button> <!-- 显示添加课程按钮 -->
+  </article>
+</main>
+
+<footer>
+  <p>ZK学生信息管理系统</p> <!-- 显示网站底部信息 -->
+</footer>
+
+</body>
+
+</html>
+
+<!--这段HTML代码是一个简单的学生信息管理系统的前端代码，包括两个表格（学生信息表格和课程信息表格），每个表格都有操作按钮（编辑和删除），并且可以添加新的学生或课程。下面是对每个部分的具体注释：-->
+
+<!--1. `<!DOCTYPE html>`声明为html5文档类型；-->
+<!--2. `<html>`和`</html>`标签包含整个HTML文档；-->
+<!--3. `<head>`和`</head>`标签包含了文档的元数据，如标题、样式表和脚本等；-->
+<!--4. `<title>`和`</title>`标签用于设置浏览器标题栏的文本；-->
+<!--5. `<meta>`标签为文档定义元数据，包括字符集、视口（viewport）等；-->
+<!--6. `<link>`标签用于将外部样式表链接到HTML文档；-->
+<!--7. `<script>`标签用于将外部JavaScript文件链接到HTML文档；-->
+<!--8. `<body>`和`</body>`标签包含了文档的内容，如文本、图像、链接等；-->
+<!--9. `<header>`和`</header>`标签包含了网页的头部信息，通常包括网页标题等；-->
+<!--10. `<main>`和`</main>`标签包含了网页的主要内容；-->
+<!--11. `<article>`和`</article>`标签用于定义独立的内容区域，如博客文章、新闻报道等；-->
+<!--12. `<h1>`和`</h1>`标签用于定义标题，数字表示标题的级别，从1到6；-->
+<!--13. `<table>`和`</table>`标签用于定义表格；-->
+<!--14. `<thead>`和`</thead>`标签定义表格头部；-->
+<!--15. `<tbody>`和`</tbody>`标签定义表格内容；-->
+<!--16. `<tr>`和`</tr>`标签定义表格行；-->
+<!--17. `<th>`和`</th>`标签定义表格头部单元格；-->
+<!--18. `<td>`和`</td>`标签定义表格内容单元格；-->
+<!--19. `<button>`和`</button>`标签定义按钮；-->
+<!--20. `type="button"`属性将按钮类型设置为普通按钮；-->
+<!--21. `onclick`属性定义按钮被点击时执行的JavaScript代码；-->
+<!--22. `id`属性用于为元素设置唯一的标识符，可以在JavaScript中使用；-->
+<!--23. `<br>`标签用于插入换行符；-->
+<!--24. `<footer>`和`</footer>`标签包含了网页的底部信息，通常包括版权信息等。-->

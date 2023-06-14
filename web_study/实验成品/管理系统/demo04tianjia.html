@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>添加学生信息</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="demo03.css"> <!-- 引入外部CSS样式表 -->
+
+  <meta name="szlaurora" content="width=device-width, initial-scale=1.0"> <!-- 设置页面缩放比例 -->
+</head>
+<body>
+<header>
+  <h1>添加学生信息</h1> <!-- 页面标题 -->
+</header>
+<main>
+  <form> <!-- 表单开始 -->
+    <label for="student-id">学号：</label> <!-- 学号标签 -->
+    <input type="text" id="student-id" name="student-id"><br> <!-- 学号输入框 -->
+
+    <label for="student-name">姓名：</label> <!-- 姓名标签 -->
+    <input type="text" id="student-name" name="student-name"><br> <!-- 姓名输入框 -->
+
+    <div class="gender">
+      <label for="male" class="male-label">男</label> <!-- 男性标签 -->
+      <input type="radio" id="male" name="gender" value="male"><br> <!-- 男性单选框 -->
+
+      <label for="female" class="female-label">女</label> <!-- 女性标签 -->
+      <input type="radio" id="female" name="gender" value="female"> <!-- 女性单选框 -->
+    </div>
+
+    <label for="student-age">年龄：</label> <!-- 年龄标签 -->
+    <input type="text" id="student-age" name="student-age"><br> <!-- 年龄输入框 -->
+
+    <input type="submit" value="提交"> <!-- 提交按钮 -->
+  </form> <!-- 表单结束 -->
+</main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* 设置整个网页的字体为Arial或sans-serif，背景颜色为#F5F5F5 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+}
+
+/* 设置网页头部的背景颜色为darkseagreen，文本颜色为白色，内边距为10px */
+header {
+    background-color: darkseagreen;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+/* 设置所有h1标题的外边距为0，字体大小为36px */
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* 设置网页主体的外边距为20px */
+main {
+    margin: 20px;
+}
+
+/* 设置表单的边框为1像素实心线，内边距为10像素，背景颜色为白色，宽度为50%，水平居中对齐 */
+form {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    background-color: #FFFFFF;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* 设置标签的显示方式为行内块级元素，宽度为80像素，文本对齐方式为右对齐，右侧外边距为10像素 */
+label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* 设置文本框和单选框的宽度为200像素，内边距为5像素，底部外边距为10像素 */
+input[type="text"],
+input[type="radio"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* 设置提交按钮的背景颜色为darkseagreen，文本颜色为白色，内边距为5像素上下、10像素左右，无边框，边框圆角为5像素，光标样式为手型 */
+input[type="submit"] {
+    background-color: darkseagreen;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 当鼠标悬停在提交按钮上时，设置背景颜色为#AAFF88 */
+input[type="submit"]:hover {
+    background-color: #AAFF88;
+}
+
+/* 设置性别标签的显示方式为块级元素 */
+.gender {
+    display: block;
+}
+
+/* 设置男性标签的浮动方式为左浮动 */
+.male-label {
+    float: left;
+}
+
+/* 设置女性标签的浮动方式为左浮动 */
+.female-label {
+    float: left;
+}

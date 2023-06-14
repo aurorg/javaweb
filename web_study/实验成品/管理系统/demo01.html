@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息管理系统</title>
+    <style>
+        /* 清除所有元素的内外边距和边框 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        /* 设置背景色为浅灰色 */
+        body {
+            background-color: #f2f2f2;
+        }
+        /* 设置登录表单容器的样式 */
+        #div_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* 设置登录框的样式 */
+        .abc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        /* 设置标题的样式 */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        /* 设置输入框和标签的样式 */
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .input-group span {
+            font-size: 20px;
+            margin-right: 20px;
+            width: 100px;
+            text-align: right;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            background-color: #f7f7f7;
+            font-size: 20px;
+            padding: 0 10px;
+        }
+        /* 设置提交和重置按钮的样式 */
+        input[type="submit"],
+        input[type="reset"] {
+            width: 120px;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            background-color: darkseagreen;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 20px;
+            transition: background-color 0.3s ease;
+        }
+        /* 设置提交和重置按钮的鼠标悬停效果 */
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: darkseagreen;
+        }
+        /* 设置错误信息提示的样式 */
+        .error-msg {
+            color: red;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="div_container">
+    <!-- 设置登录表单 -->
+    <form action="demo02.html" method="post" class="abc" onsubmit="return checkForm()">
+        <!-- 设置登录表单的标题 -->
+        <h1>欢迎来到登录界面</h1>
+        <!-- 设置学号输入框 -->
+        <div class="input-group">
+            <span>学号：</span>
+            <input type="text" name="student_number" id="student_number" />
+        </div>
+        <!-- 设置密码输入框 -->
+        <div class="input-group">
+            <span>密码：</span>
+            <input type="password" name="pwd" id="pwd" />
+        </div>
+        <!-- 设置提交和重置按钮 -->
+        <div class="btn-group">
+            <input type="submit" value="登录" />
+            <input type="reset" value="重置" />
+        </div>
+        <!-- 设置错误信息提示 -->
+        <div id="error-msg"></div>
+    </form>
+</div>
+<!-- 设置JavaScript代码，用于检查学号和密码是否为空 -->
+<script>
+    function checkForm() {
+        var studentNumber = document.getElementById("student_number").value.trim();
+        var password = document.getElementById("pwd").value.trim();
+        var errorMsg = document.getElementById("error-msg");
+        if (studentNumber === "" || password === "") {
+            errorMsg.innerHTML = "学号和密码不能为空！";
+            return false;
+        } else {
+            errorMsg.innerHTML = "";
+            return true;
+        }
+    }
+</script>
+</body>
+</html>

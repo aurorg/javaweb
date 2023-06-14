@@ -1,0 +1,137 @@
+/* 设置页面背景图片以及背景大小和位置 */
+body {
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 设置页面头部的样式，包括背景和文字颜色，以及显示方式、对齐方式和内边距 */
+header {
+    background: linear-gradient(to bottom, #FFFFFF, darkseagreen);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* 设置页面标题的样式，包括字体大小、粗细、对齐方式和文本阴影 */
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+}
+
+/* 设置导航栏的样式，包括列表样式、外边距、内边距、显示方式和列表项样式 */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+/* 设置导航栏链接的样式，包括文字颜色、文本装饰、内边距和边框半径 */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* 设置导航栏链接的鼠标悬停样式，包括背景颜色和文字颜色 */
+nav ul li a:hover {
+    background-color: #fff;
+    color:  darkseagreen;
+}
+
+/* 设置页面主体的样式，包括外边距 */
+main {
+    margin: 20px;
+}
+
+/* 设置页面副标题的样式，包括上边距 */
+h2 {
+    margin-top: 0;
+}
+
+/* 设置表格的样式，包括表格边框合并、宽度、内边距、文字对齐方式和底部边框样式 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 设置表格标题的样式，包括背景颜色和文字颜色 */
+th {
+    background-color:  darkseagreen;
+    color: #fff;
+}
+
+/* 设置按钮的样式，包括背景颜色、文字颜色、边框、内边距、边框半径、鼠标指针和鼠标悬停效果 */
+button {
+    background-color: darkseagreen;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: darkseagreen;
+    transform: scale(1.1);
+}
+
+/* 设置页面底部的样式，包括内边距和对齐方式 */
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+/* 设置课程表格的样式，包括宽度、表格边框合并、内边距、文字对齐方式和边框样式 */
+#tbl_course {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tbl_course th, #tbl_course td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* 设置课程表格标题的样式，包括背景颜色和文字颜色 */
+#tbl_course th {
+    background-color: darkseagreen;
+}
+
+/* 设置课程表格按钮的样式，包括背景颜色、文字颜色、边框、内边距、边框半径和鼠标指针 */
+#tbl_course button {
+    background-color: darkseagreen;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 设置课程表格按钮的鼠标悬停效果 */
+#tbl_course button:hover {
+    background-color: darkseagreen;
+}

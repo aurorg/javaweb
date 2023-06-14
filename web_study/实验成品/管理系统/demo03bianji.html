@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>编辑学生信息</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="demo03.css"> <!-- 引入外部CSS样式表 -->
+  <meta name="szlaurora" content="width=device-width, initial-scale=1.0"> <!-- 设置页面缩放比例 -->
+
+  <script src="caozuo.js"></script> <!-- 引入外部JavaScript文件 -->
+</head>
+<body>
+<header>
+  <h1>编辑学生信息</h1> <!-- 页面标题 -->
+</header>
+<main>
+  <form id="edit-form"> <!-- 表单开始 -->
+    <table>
+      <tr>
+        <td><label for="student-id">学号：</label></td> <!-- 学号标签 -->
+        <td><input type="text" id="student-id" name="student-id"></td> <!-- 学号输入框 -->
+      </tr>
+
+      <tr>
+        <td><label for="student-name">姓名：</label></td> <!-- 姓名标签 -->
+        <td><input type="text" id="student-name" name="student-name"></td> <!-- 姓名输入框 -->
+      </tr>
+
+      <tr>
+        <td><label>性别：</label></td> <!-- 性别标签 -->
+        <td>
+          <div id="gender">
+            <input type="radio" id="male" name="gender" value="male"> <!-- 男性单选框 -->
+            <label for="male" class="male-label">男</label><br> <!-- 男性标签 -->
+
+            <input type="radio" id="female" name="gender" value="female"> <!-- 女性单选框 -->
+            <label for="female" class="female-label">女</label> <!-- 女性标签 -->
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="student-age">年龄：</label></td> <!-- 年龄标签 -->
+        <td><input type="text" id="student-age" name="student-age"></td> <!-- 年龄输入框 -->
+      </tr>
+    </table>
+
+    <div class="submit">
+      <input type="submit" value="提交"> <!-- 提交按钮 -->
+      <!-- Indicates a successful or positive action --> <!-- 表示成功或积极的操作 -->
+      <!-- <button type="button" class="btn btn-success">提交</button> --> <!-- 另一种提交按钮的实现方式 -->
+    </div>
+  </form> <!-- 表单结束 -->
+</main>
+</body>
+</html>
