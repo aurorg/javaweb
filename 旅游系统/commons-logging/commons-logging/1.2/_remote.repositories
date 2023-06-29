@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jun 14 23:01:10 CST 2023
+commons-logging-1.2.jar>alimaven=
+commons-logging-1.2.pom>alimaven=
+commons-logging-1.2.jar>central=
+commons-logging-1.2.pom>central=

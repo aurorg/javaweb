@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jun 14 23:01:10 CST 2023
+jdependency-0.7.pom>central=
+jdependency-0.7.jar>central=
+jdependency-0.7.jar>alimaven=
+jdependency-0.7.pom>alimaven=

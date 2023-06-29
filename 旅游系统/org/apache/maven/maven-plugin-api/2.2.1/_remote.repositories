@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jun 14 23:00:56 CST 2023
+maven-plugin-api-2.2.1.jar>alimaven=
+maven-plugin-api-2.2.1.jar>central=
+maven-plugin-api-2.2.1.pom>central=
+maven-plugin-api-2.2.1.pom>alimaven=

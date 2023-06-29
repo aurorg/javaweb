@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jun 14 22:59:07 CST 2023
+javax.activation-api-1.2.0.pom>central=
+javax.activation-api-1.2.0.pom>alimaven=
+javax.activation-api-1.2.0.jar>jvnet-nexus-releases=

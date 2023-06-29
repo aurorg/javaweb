@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jun 14 23:01:10 CST 2023
+maven-dependency-tree-2.1.jar>central=
+maven-dependency-tree-2.1.jar>alimaven=
+maven-dependency-tree-2.1.pom>central=
+maven-dependency-tree-2.1.pom>alimaven=

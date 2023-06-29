@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jun 14 23:01:10 CST 2023
+maven-common-artifact-filters-1.4.pom>central=
+maven-common-artifact-filters-1.4.pom>alimaven=
+maven-common-artifact-filters-1.4.jar>alimaven=
+maven-common-artifact-filters-1.4.jar>central=
